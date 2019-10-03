@@ -57,7 +57,7 @@ describe('upgrade plugin for version 0.0.1', () => {
 
   it('reads dependencies from package.json', () => {
     expect(upgrade().projectDependencies()).to.deep.equal({
-      artillery: 'git+https://github.com/Nordstrom/artillery.git#96552a4656ba7d1c32d8868754b1f1ab5299f8b8',
+      artillery: '^1.6.0-29',
       'js-yaml': '^3.13.0',
       'lodash.merge': '^4.6.1',
       'lodash.omit': '^4.5.0',
